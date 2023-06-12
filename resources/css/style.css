@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 
@@ -28,7 +29,8 @@ html, body, #map {
 
 #currentModeContainer {
   position: absolute;
-  top: 130px;
+  z-index: 999;
+  top: 180px;
   right: 10px;
 }
 
@@ -38,5 +40,34 @@ html, body, #map {
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transform: translate(100%, -50%);
+  background: white;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  z-index: 998;
+  overflow-y: auto;
+}
+
+.show {
+  transform: translate(0, -50%);
+}
+
+.custom-icon div {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: relative;
+  border-radius: 2rem 2rem 0;
+  transform: rotate(45deg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  border: 1px solid #FFFFFF;
 }
 

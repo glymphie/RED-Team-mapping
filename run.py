@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import argparse
 from http.server import SimpleHTTPRequestHandler, HTTPServer
 
